@@ -1,6 +1,6 @@
-import 'package:app_theme/app_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import '../styles/styles.dart';
 import 'app_view.dart';
 
 class RootApp extends StatefulWidget {

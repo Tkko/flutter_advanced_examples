@@ -1,20 +1,20 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import '../app_font_families.dart';
-import '../colors/app_dark_colors.dart';
+import 'package:google_fonts/google_fonts.dart';
+import '../colors/app_light_colors.dart';
 import 'app_theme_base.dart';
 
-class AppDarkTheme implements AppThemeBase {
-  const AppDarkTheme();
+class AppLightTheme implements AppThemeBase {
+  const AppLightTheme();
 
   @override
   ThemeData get themeData {
-    const palette = AppDarkColors();
+    const palette = AppLightColors();
     return ThemeData(
       useMaterial3: true,
       extensions: const [palette],
-      brightness: Brightness.dark,
-      colorScheme: ColorScheme.dark(
+      brightness: Brightness.light,
+      colorScheme: ColorScheme.light(
         primary: palette.primary,
         onPrimary: palette.elPrimary,
         secondary: palette.secondary,
@@ -27,17 +27,15 @@ class AppDarkTheme implements AppThemeBase {
         onSurfaceVariant: palette.elPrimary,
       ),
       textTheme: TextTheme(
-        bodyMedium: TextStyle(
+        bodyMedium: GoogleFonts.poppins(
           color: palette.elPrimary,
           fontWeight: FontWeight.w400,
           fontSize: 16,
-          fontFamily: AppFontFamilies.nunito,
         ),
-        labelMedium: TextStyle(
+        labelMedium: GoogleFonts.poppins(
           color: palette.elPrimary,
           fontWeight: FontWeight.w400,
           fontSize: 12,
-          fontFamily: AppFontFamilies.nunito,
         ),
       ),
       listTileTheme: ListTileThemeData(

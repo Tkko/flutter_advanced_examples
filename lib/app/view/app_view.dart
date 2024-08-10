@@ -1,5 +1,6 @@
-import 'package:app_theme/app_theme.dart';
 import 'package:flutter/material.dart';
+
+import '../styles/styles.dart';
 
 class AppView extends StatelessWidget {
   const AppView({

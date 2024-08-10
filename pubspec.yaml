@@ -9,8 +9,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  app_theme:
-    path: packages/app_theme
+  google_fonts: ^6.2.1
 
 dev_dependencies:
   flutter_test:
